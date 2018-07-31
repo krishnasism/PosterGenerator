@@ -1,0 +1,570 @@
+input[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #3CBC8D;
+    font-size:24px;
+    font-family: monospace;
+        color: white;
+    text-decoration-color: white;
+    display: inline-block;
+    border-radius: 25px;
+
+}
+input[type=text]:focus {
+    width: 70%;
+}
+
+.indexdiv{
+    height: 340px;
+    width: 500px;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    margin-top: -100px;
+    margin-left: -200px;
+    background-image: url("image/cloud.jpg");
+   border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 5px 5px 1px #888888;
+    border-radius: 50px;
+    text-align:center
+
+
+}
+
+.imagediv{
+    height: 600px;
+    width: 900px;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    margin-top: -270px;
+    margin-left: -360px;
+    background-image: url("image/cloud.jpg");
+   border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 5px 5px 1px #888888;
+    border-radius: 50px;
+    text-align:center
+
+
+}
+
+.colordiv{
+    height: 420px;
+    width: 500px;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+    margin-top: -100px;
+    margin-left: -200px;
+    background-image: url("image/cloud.jpg");
+   border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 5px 5px 1px #888888;
+    border-radius: 50px;
+    text-align:center
+
+
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: monospace;
+
+}
+
+
+
+body {
+    background-image: url("image/cloud.jpg");
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 23px;
+    font-family: monospace;
+    color : white;
+     letter-spacing: 3px;
+     text-shadow: 1px 1px 15px black;
+
+}
+
+
+
+div {
+    clear: both;
+    margin: 0 50px;
+    text-align: center;
+}
+
+label {
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+  font-family:monospace;
+  font-size: 16px;
+  color : white;
+
+}
+
+/* hide input */
+input.radio:empty {
+    margin-left: -5000px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        font-family: monospace;
+
+}
+
+input.radio:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+        font-family: monospace;
+
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+
+}
+
+input.radio:hover:not(:checked) ~ label {
+    color: blue;
+
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #9CE2AE;
+    background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+    color: green;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* radio focus */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    opacity:  0.7;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  0.7;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  0.7;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+   opacity:  0.7;
+}
+
+
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    font-family: monospace;
+    left: -30px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 20px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 15px 15px 0; /* Rounded corners on the top right and bottom right side */
+
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+#home{
+        background-color: #555;
+            font-family: monospace;
+
+
+}
+/* The about link: 20px from the top with a green background */
+#about {
+    background-color: #237f79;
+        font-family: monospace;
+
+}
+
+#one {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/architecture.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#two {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/food.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#three {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/animals.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#four {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/cars.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#five {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/sceneries.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#six {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/festivals.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#seven {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/patterns.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#eight {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/clouds.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#nine {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/books.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#ten {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/computers.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#eleven {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/stationery.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+#twelve {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/low-poly.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#thirteen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/serene.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#fourteen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/party.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#fifteen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/corporate.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#sixteen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/concert.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#seventeen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/football.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}#eighteen {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/abstract.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+#cas1 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/casuallayout1.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+     border-radius: 0 0px 0px 0;
+               font-size: 0px;
+    width: 350px;
+
+}
+
+#cas2 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/casuallayout2.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+                  font-size: 0px;
+                      width: 350px;
+
+
+
+}
+
+#cas3 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/casuallayout3.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+                  font-size: 0px;
+                      width: 350px;
+
+
+
+}
+
+#backgrounddiv {
+    overflow-y: auto;
+}
+
+#cas4 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/casuallayout4.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+
+
+#corp1 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/corporatelayout1.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#corp2 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/corporatelayout2.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#corp3 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/corporatelayout3.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#corp4 {
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/corporatelayout4.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+
+#eve1{
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/eventlayout1.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#eve2{
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/eventlayout2.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#eve3{
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/eventlayout3.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+#eve4{
+     background-color: red;
+        font-family: monospace;
+        background-image: url("image/examples/eventlayout4.png");
+        background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+         border-radius: 0 0px 0px 0;
+         font-size: 0px;
+             width: 350px;
+
+
+}
+
+
